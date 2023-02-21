@@ -1,0 +1,10 @@
+
+> @boilerplate/web@ build /Users/jclackett/Apps/Boilerplate/@boilerplate-turbo/apps/web
+> pnpm with-env remix build
+
+
+> @boilerplate/web@ with-env /Users/jclackett/Apps/Boilerplate/@boilerplate-turbo/apps/web
+> dotenv -e ../../.env -- "remix" "build"
+
+Building Remix app in development mode...
+Built in 869ms

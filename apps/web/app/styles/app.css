@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+    @apply font-bold;
+  }
+
+  hr {
+    @apply border-gray-100 dark:border-gray-600;
+  }
+  * {
+    @apply dark:text-white;
+  }
+}
+
+.react-menu {
+  z-index: 99999 !important;
+}
+
+.react-control {
+  min-height: 34px !important;
+}
+
+@layer components {
+  .stack {
+    @apply space-y-2;
+  }
+  .hstack {
+    @apply flex flex-row items-center space-x-2;
+  }
+  .vstack {
+    @apply flex flex-col items-center space-y-2;
+  }
+  .center {
+    @apply flex items-center justify-center;
+  }
+}

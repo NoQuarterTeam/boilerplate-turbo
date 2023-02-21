@@ -1,0 +1,26 @@
+{
+  "name": "@boilerplate/database",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "files": [
+    "./index.ts",
+    "./types.ts"
+  ],
+  "sideEffects": false,
+  "dependencies": {
+    "@prisma/client": "4.10.1"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^7.0.0",
+    "@types/node": "^18.14.0",
+    "prisma": "4.10.1"
+  },
+  "scripts": {
+    "clean": "rm -rf .turbo node_modules",
+    "db:migrate": "pnpm with-env prisma migrate dev",
+    "db:generate": "pnpm with-env prisma generate",
+    "db:push": "pnpm with-env prisma db push --skip-generate",
+    "dev": "pnpm with-env prisma studio --port 5556",
+    "with-env": "dotenv -e ../../.env --"
+  }
+}

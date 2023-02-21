@@ -1,0 +1,20 @@
+{
+  "name": "@boilerplate/api",
+  "version": "1.0.0",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "sideEffects": false,
+  "devDependencies": {
+    "@types/bcrypt": "5.0.0",
+    "@types/jsonwebtoken": "9.0.1",
+    "@types/node": "^18.14.0"
+  },
+  "scripts": {},
+  "dependencies": {
+    "@boilerplate/database": "*",
+    "@trpc/server": "^10.12.0",
+    "bcrypt": "^5.1.0",
+    "jsonwebtoken": "9.0.0",
+    "zod": "3.20.6"
+  }
+}

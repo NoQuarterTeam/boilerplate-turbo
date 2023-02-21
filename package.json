@@ -1,0 +1,41 @@
+{
+  "name": "@boilerplate/root",
+  "private": true,
+  "workspaces": [
+    "./apps/**/**",
+    "./packages/**/**"
+  ],
+  "devDependencies": {
+    "prettier": "^2.8.4",
+    "turbo": "^1.3.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:ci": "turbo run test:ci",
+    "db:generate": "turbo run db:generate",
+    "db:push": "turbo run db:push"
+  },
+  "resolutions": {
+    "esbuild": "0.16.3"
+  },
+  "pnpm": {
+    "overrides": {
+      "esbuild": "0.16.3"
+    },
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@babel/*",
+        "expo-modules-*",
+        "typescript",
+        "metro"
+      ]
+    }
+  },
+  "prisma": {
+    "schema": "./packages/prisma/schema.prisma"
+  }
+}

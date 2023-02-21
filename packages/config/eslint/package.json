@@ -1,0 +1,17 @@
+{
+  "name": "@boilerplate/eslint-config",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "sideEffects": false,
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.52.0",
+    "@typescript-eslint/parser": "5.52.0",
+    "eslint": "8.34.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "10.0.0",
+    "eslint-plugin-tailwindcss": "^3.8.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
