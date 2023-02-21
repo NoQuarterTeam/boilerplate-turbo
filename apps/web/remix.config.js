@@ -20,6 +20,6 @@ module.exports = {
   ],
   watchPaths: ["../../packages/api"],
   routes: (defineRoutes) => {
-    return flatRoutes("pages", defineRoutes)
+    return flatRoutes("./pages", defineRoutes)
   },
 }
