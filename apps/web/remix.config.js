@@ -19,7 +19,7 @@ module.exports = {
     "split-on-first",
   ],
   watchPaths: [require.resolve("@boilerplate/api")],
-  routes: (defineRoutes) => {
-    return flatRoutes("./apps/web/app/pages", defineRoutes)
-  },
+  // routes: (defineRoutes) => {
+  //   return flatRoutes("./apps/web/app/pages", defineRoutes)
+  // },
 }
