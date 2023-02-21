@@ -36,6 +36,6 @@
     }
   },
   "prisma": {
-    "schema": "./packages/prisma/schema.prisma"
+    "schema": "./packages/database/schema.prisma"
   }
 }
