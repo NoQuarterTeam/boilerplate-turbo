@@ -83,7 +83,7 @@
     "typescript": "^4.9.5"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "resolutions": {
     "esbuild": "0.16.3"

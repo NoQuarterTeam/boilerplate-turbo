@@ -20,6 +20,6 @@ module.exports = {
   ],
   watchPaths: [require.resolve("@boilerplate/api")],
   routes: (defineRoutes) => {
-    return flatRoutes("./web/app/pages", defineRoutes)
+    return flatRoutes("./apps/web/app/pages", defineRoutes)
   },
 }
