@@ -18,8 +18,8 @@ module.exports = {
     "filter-obj",
     "split-on-first",
   ],
-  watchPaths: ["../../packages/api"],
+  watchPaths: [require.resolve("@boilerplate/api")],
   routes: (defineRoutes) => {
-    return flatRoutes("./pages", defineRoutes)
+    return flatRoutes("apps/web/app/pages", defineRoutes)
   },
 }
